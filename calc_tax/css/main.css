@@ -1,0 +1,12 @@
+/* 外部CSSファイルです。 */
+body{
+	background-color: #dcdcdc;
+}
+
+.container{
+	padding-top: 50px;
+}
+
+#btnExec{
+	margin-bottom: 30px;
+}
