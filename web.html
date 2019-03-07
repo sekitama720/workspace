@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ウェブ作品集</title>
+
+    <!-- jQueryの読み込み -->
+    <script src="lib/jquery.min.js"></script>
+
+    <!-- bootstrapの読み込み -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/common.css"><!-- 表示の微調整用 -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">このサイトではウェブプログラミングに関する学習によって完成したアプリなどを記録するものとする。</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <i class="fas fa-laptop"></i>
+            <strong>ウェブ制作作品</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- メイン -->
+    <main role="main">
+
+      <!-- ジャンボトロン -->
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">ウェブ作品集</h1>
+          <p class="lead text-muted">学習内容：HTML,CSS,javascript,PHP,Ruby,Python</p>
+          <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link alert-light" href="./index.html">作成アプリケーション</a>
+            <a class="flex-sm-fill text-sm-center nav-link active" href="#">作成Webサイト</a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- コンテンツ -->
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-danger">Webサイト</strong>
+                  <h3 class="mb-0">映画評価サイト</h3>
+                  <div class="mb-1 text-muted"><time>2019-02-20</time></div>
+                  <p class="card-text mb-auto">初めて制作したWEBサイトです。</p>
+                  <a href="https://sekitama720.github.io/mysite/" class="stretched-link">Try using it!</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Web</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Webサイト</text></svg>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>学習記録をつけることを心がけること</p>
+      </div>
+    </footer>
+
+    <!-- 外部jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  </body>
+</html>

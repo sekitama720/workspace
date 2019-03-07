@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>js三択問題アプリ</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>js三択問題アプリ</h1>
+
+      <!-- 問題 -->
+      <div class="card card-default mt-3" id="pnl1">
+        <div class="card-header"><b>問題1. 条件分岐で使われる構文は？</b></div>
+        <div class="card-body">
+          <!-- ラジオボタン -->
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="1" /> if文
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="2" /> while文
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="3" /> for文
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 問題2 -->
+      <div class="card card-default mt-3" id="pnl2">
+        <div class="card-header"><b>問題2. var tid = setInterval(func,5000); このスクリプト実行すると何秒おきにfunc関数は実行されますか？</b></div>
+        <div class="card-body">
+          <!-- ラジオボタン -->
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="1" /> 5秒
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="2" /> 5000秒
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="3" /> 5分
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 問題パネル3 -->
+      <div class="card card-default mt-3" id="pnl3">
+        <div class="card-header"><b>問題3.　var f = function(x){ console.log(x); }; この関数でコンソールログに"ABC"を表示するには？</b></div>
+        <div class="card-body">
+          <!-- ラジオボタン -->
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="q3" value="1" /> f("ABC");
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q3" value="2" /> f();
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q3" value="3" /> ABC = f();
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ボタン -->
+      <div class="form-group mt-3">
+        <button type="button" class="btn btn-primary btn-block" id="btnCheck">
+          結果を見る
+        </button>
+      </div>
+
+      <!-- 結果出力 -->
+      <div class="card card-default">
+        <div class="card-header"><b> </b></div>
+        <div class="card-body" id="res">?</div>
+        <div class="card-footer"><b> </b></div>
+      </div>
+    </div>
+  </body>
+</html>

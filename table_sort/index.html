@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>テーブル ソート</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>テーブル ソート</h1>
+
+      <!-- テーブル -->
+      <div class="form-group">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>国名</th>
+              <th>面積km<sup>2</sup></th>
+            </tr>
+          </thead>
+          <tbody id="lstBdy">
+            <tr>
+              <td>ロシア</td>
+              <td>17,098,242</td>
+            </tr>
+            <tr>
+              <td>カナダ</td>
+              <td>9,984,670</td>
+            </tr>
+            <tr>
+              <td>チャイナ</td>
+              <td>9,596,961</td>
+            </tr>
+            <tr>
+              <td>アメリカ</td>
+              <td>9,833,517</td>
+            </tr>
+            <tr>
+              <td>ブラジル</td>
+              <td>8,514,877</td>
+            </tr>
+          </tbody>
+        </table>
+        <span class="help-block">出典：<a href="https://ja.wikipedia.org/wiki/%e5%9b%bd%e3%81%ae%e9%9d%a2%e7%a9%8d%e9%a0%86%e3%83%aa%e3%82%b9%e3%83%88">Wikipedia</a></span>
+      </div>
+
+      <!-- ボタン -->
+      <button type="button" class="btn btn-primary" id="btnSortName">名前でソート</button>
+      <button type="button" class="btn btn-primary" id="btnSortArea">面積でソート</button>
+    </div>
+  </body>
+</html>
